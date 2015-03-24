@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subnumber:</strong>
+  <%= @thesubject.subNumber %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @thesubject.age %>
+</p>
+
+<h2>Visit 1</h2>
+
+<%= form_for [@thesubject, Visit.new] do |f| %>
+    <p><%= f.label 'Date of Visit' %> <%= f.text_field :dov1 %></p>
+    <p><%= f.label 'Date the Informed Consent was signed' %> <%= f.text_field :icfDt %> </p>
+    <p><%= f.label 'Sex' %> <%= f.text_field :sex %> </p>
+    <p><%= f.label 'Continue to Visit 1' %> <%= f.text_field :cont1 %> </p>
+
+    <button name='button' type='submit'>Create Visit 1</button>
+
+
+
+<% end %>
+
+
+<%= link_to 'Edit', edit_thesubject_path(@thesubject) %>
+<%= link_to 'Back', thesubjects_path %>

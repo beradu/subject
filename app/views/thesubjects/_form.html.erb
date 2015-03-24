@@ -1,0 +1,25 @@
+<%= form_for(@thesubject) do |f| %>
+  <% if @thesubject.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thesubject.errors.count, "error") %> prohibited this thesubject from being saved:</h2>
+
+      <ul>
+      <% @thesubject.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Subject Number' %><br>
+    <%= f.text_field :subNumber %>
+  </div>
+  <div class="field">
+    <%= f.label 'Age of the Subject' %><br>
+    <%= f.text_field :age %>
+  </div>
+  <div class="actions">
+    <button name='button' type='submit'>Register Subject</button>
+  </div>
+<% end %>
