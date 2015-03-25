@@ -29,13 +29,16 @@
         <td><%= link_to 'Edit', edit_thesubject_path(thesubject) %></td>
         <td><%= link_to 'Destroy', thesubject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+
+      <tr>
+        <td><%= link_to 'Visit 2', visit_2_thesubject_path(thesubject) %></td>
+      </tr>
+
+
+  <% end %>
 
     <br/>
 
-      <tr>
-        <td><%= link_to 'Visit 2' %></td>
-      </tr>
 
 
 

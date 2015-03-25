@@ -6,6 +6,14 @@ class VisitsController < ApplicationController
     redirect_to @thesubject, :notice => 'Visit Created!'
   end
 
+  def visit_1
+
+  end
+
+  def visit_2
+
+  end
+
   private
   def visit_params
     params.require(:visit).permit(:dov1, :icfDt, :sex, :cont1)

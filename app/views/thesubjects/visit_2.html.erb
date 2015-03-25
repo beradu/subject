@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<h2>Visit 2</h2>
+
+<%= form_for [@thesubject, Visit.new] do |f| %>
+    <p><%= f.label 'Date of Visit' %> <%= f.text_field :dov2 %></p>
+    <p><%= f.label 'Vital Signs' %> <%= f.text_field :vtlSigns %> </p>
+    <p><%= f.label 'Weight' %> <%= f.text_field :weight %> </p>
+    <p><%= f.label 'Height' %> <%= f.text_field :height %> </p>
+
+    <button name='button' type='submit'>Create Visit 2</button>
+
+
+<% end %>
+
+
+<%= link_to 'Edit', edit_thesubject_path(@thesubject) %>
+<%= link_to 'Back', thesubjects_path %>

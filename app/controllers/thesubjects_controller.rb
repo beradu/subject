@@ -1,5 +1,5 @@
 class ThesubjectsController < ApplicationController
-  before_action :set_thesubject, only: [:show, :secondvisit, :edit, :update, :destroy]
+  before_action :set_thesubject, only: [:show, :edit, :update, :destroy]
 
   # GET /thesubjects
   # GET /thesubjects.json
@@ -13,11 +13,12 @@ class ThesubjectsController < ApplicationController
   def show
   end
 
+  def visit_1
 
-  # GET /thesubjects
-  # GET /thesubjects.json
-  def secondvisit
-    @visit2 = render :second_visits
+  end
+
+  def visit_2
+
   end
 
 
