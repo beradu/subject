@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dov1: MyString
+  icfDt: MyString
+  se: MyString
+  cont1: MyString
+
+two:
+  dov1: MyString
+  icfDt: MyString
+  se: MyString
+  cont1: MyString
